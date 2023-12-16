@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= product.name %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/show.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= product.name %></h1>
+      <ul>
+        <li><b>Price:</b> $ <%= product.price %></li>
+        <li>
+          <b>category:</b>
+          <a href="/products?category=<%= product.category %>"
+            ><%= product.category %></a
+          >
+        </li>
+      </ul>
+      <div class="btn-container">
+        <div class="btn">
+          <a href="/products/<%=product.id%>/edit">Edit product</a>
+        </div>
+        <div class="btn">
+          <a href="/products">All products</a>
+        </div>
+        <div class="btn">
+          <form
+            action="/products/<%=product._id%>?_method=DELETE"
+            method="POST"
+          >
+            <button>Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

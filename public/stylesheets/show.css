@@ -1,0 +1,48 @@
+.btn {
+    margin-top: 50px;
+}
+
+.btn a {
+    color: royalblue;
+    background-color: white;
+    border: 2px solid royalblue;
+    padding: 10px 25px;
+    border-radius: .5rem;
+    transition: all 0.2s linear;
+    font-weight: 500;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    transform: translateY(2px);
+    color: white;
+    background-color: royalblue;
+    border-color: royalblue;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-container .btn {
+    margin-right: 20px;
+}
+
+.btn button {
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    border-radius: .5rem;
+    transition: all 0.2s linear;
+    font-weight: 500;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.btn button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-color: red;
+}
